@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>whatdoesyourfavoritecolorsayaboutyouquiz</title>
+</head>
+<body>
+
+<h1>What Does Your Favorite Color Say About You?</h1>
+<p>by Nicki Gaito</p>
+<hr>
+<p>pick your favorite color:</p>
+<p>
+<select id="colordropdown">
+	<option value="red">red</option>
+	<option value="orange">orange</option>
+	<option value="yellow">yellow</option>
+	<option value="green">green</option>
+	<option value="blue">blue</option>
+	<option value="purple">purple</option>
+	<option value="pink">pink</option>
+	<option value="black">black</option>
+</select>
+</p>
+
+
+<button onclick="
+computeColor(
+document.getElementById('colordropdown').value,
+)">show me my results!</button>
+
+
+<p id="putHere"></p>
+
+<script>
+
+function computeColor(colordropdown){
+
+var characteristic = "";
+if (colordropdown == "red"){
+characteristic = "you are bold, determined, driven, and spontaneous, but you are always seeking atttention!"
+} else if (colordropdown == "orange") {
+characteristic = "you are very enthusiastic and have a vibrant personality, but often feel lonely and a need for socialization!"
+} else if (colordropdown == "yellow") {
+characteristic = "you are cheerful and positive, but sometimes do not take things seriously enough!"
+} else if (colordropdown == "green") {
+characteristic = "you have very good luck, but can also be jealous and conceited!"
+} else if (colordropdown == "purple") {
+characteristic = "you are caring and compassionate, but sometimes people take advantage of this!"
+} else if (colordropdown == "blue") {
+characteristic = "you are very calm, trustworthy, and loyal, but can become very over-emotional!"
+} else if (colordropdown == "pink") {
+characteristic = "you are kind, generous, and aware of other people's feelings, but your own feelings are easily hurt!"
+} else if (colordropdown == "black") {
+characteristic = "you are intruiging, easily maintain self-control, and you value your privacy"
+}
+document.getElementById('putHere').innerHTML = characteristic;
+}
+
+</script>
+<img src="rainbow.png.jpg" width="1000" height="333"></img>
+
+<a href="file:///Users/nickigaito/Desktop/rngproject.html">visit other projects!</a>
+
+</body>
+</html>
